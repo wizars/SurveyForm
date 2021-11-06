@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image:linear-gradient(
+    115deg,
+    rgba(29, 29, 168, 0.404),
+    rgba(64, 64, 206, 0.459)
+  ),
+  url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg)
+}
+
+.contenedor{
+    width: 100%;
+    /* background-color: red; */
+    font-size: larger;
+    margin-top: 50px;
+    color: white;
+    font-family: sans-serif;
+}
+#title{
+    width: 100%;
+    text-align: center;
+    margin:0;
+    font-weight: normal;
+}
+#description{
+    width: 100%;
+    text-align: center;
+    font-weight:100;
+    font-style: italic;
+}
+
+form{
+    padding: 50px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(15, 47, 133, 0.788) ;
+    border-radius: 0.25em;
+}
+.bloque{
+    margin: 25px auto;
+    padding: 8px;
+    background-color: rgba(255, 0, 0, 0.473);
+}
+label{
+    display: block;
+    color: white;
+    margin-bottom: 8px;
+}
+select, input{
+    font-size: large;
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    padding: 8px 10px;
+}
+.bloque span{
+    font-size: small;
+}
+#recomend label{
+    display: flex;
+    font-size: large;
+}
+.radio-input{
+    display: inline-block;
+    width:20px;
+    height: 20px;
+    margin-left: 0;
+    margin-right: 0.5em;
+    
+}
+#recomend{
+    display: block;
+    padding-bottom: 10px;
+}
+p{
+    font-size: large;
+    margin: 0 0 8px 0;
+}
