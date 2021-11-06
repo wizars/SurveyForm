@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -28,7 +28,7 @@
 
         <div class="bloque">
           <label for="age" id="number-label">Age<span> (optional)</span></label>
-          <input type="number" min="10" max="100" placeholder="Age" name="age" id="age" />
+          <input type="number" min="10" max="100" placeholder="Age" name="age" id="number" />
         </div>
 
         <div class="bloque">
@@ -67,10 +67,108 @@
           </select>
         </div>
 
-        <div class="bloque">
-            <p>What would you like to see improved?<span>(Check all that apply)</span></p>
+        <div class="bloque" id="improve">
+          <p>What would you like to see improved?<span>(Check all that apply)</span></p>
+          <label for="front">
+            <input
+              type="checkbox"
+              class="check-input"
+              name="improve"
+              id="front"
+              value="front"
+            />Front-end Projects
+          </label>
+          <label for="back">
+            <input
+              type="checkbox"
+              class="check-input"
+              name="improve"
+              id="back"
+              value="back"
+            />Back-end Projects
+          </label>
+          <label for="data">
+            <input type="checkbox" class="check-input" name="improve" id="data" value="data" />Data
+            Visualization
+          </label>
+          <label for="challenges">
+            <input
+              type="checkbox"
+              class="check-input"
+              name="improve"
+              id="challenges"
+              value="challenges"
+            />Challenges
+          </label>
+          <label for="open">
+            <input type="checkbox" class="check-input" name="improve" id="open" value="open" />Open
+            Source Community
+          </label>
+          <label for="gitter">
+            <input
+              type="checkbox"
+              class="check-input"
+              name="improve"
+              id="gitter"
+              value="gitter"
+            />Gitter help rooms
+          </label>
+          <label for="videos">
+            <input
+              type="checkbox"
+              class="check-input"
+              name="improve"
+              id="videos"
+              value="videos"
+            />Videos
+          </label>
+          <label for="meets">
+            <input
+              type="checkbox"
+              class="check-input"
+              name="improve"
+              id="meets"
+              value="meets"
+            />City Meetups
+          </label>
+          <label for="wiki">
+            <input type="checkbox" class="check-input" name="improve" id="wiki" value="wiki" />Wiki
+          </label>
+          <label for="forum">
+            <input
+              type="checkbox"
+              class="check-input"
+              name="improve"
+              id="forum"
+              value="forum"
+            />Forum
+          </label>
+          <label for="additional">
+            <input
+              type="checkbox"
+              class="check-input"
+              name="improve"
+              id="additional"
+              value="additional"
+            />Additional Courses
+          </label>
         </div>
+
+        <div class="bloque">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            name="comentarios"
+            id="comentarios"
+            placeholder="Enter your comments here..."
+          ></textarea>
+        </div>
+
+        <div class="bloque">
+          <button value="Submit" id="submit">Submit</button>
+        </div>
+
       </form>
     </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
